@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ptml>
+<processTree id="27487045-7332-4f0b-ae4e-61f435d68d02" name="Process tree discovered by the ETM algorithm" root="a074673b-a131-41e6-95bc-3c6c35a38294">
+<or id="0851ae0c-b957-467b-8a77-7577410204ce" name="OR (4)"/>
+<automaticTask id="6e6bcc78-4dd8-4204-90d2-d410aa1b2851" name="Tau"/>
+<sequence id="047b58dc-0fb6-42b4-a840-ee12d068556e" name="SEQ (18)"/>
+<xor id="0e797d3d-d09d-42d8-8348-eba5c97693bf" name="XOR (22)"/>
+<manualTask id="833ff79f-b5cc-4c07-af23-f50a0b1def4b" name="Request For Payment REJECTED by ADMINISTRATION"/>
+<xorLoop id="0c3d11be-8b31-4a59-852d-843d49f44a57" name="LOOP (1)"/>
+<manualTask id="f0494c62-10b7-4be5-961e-a75a7f099b78" name="Request For Payment REJECTED by SUPERVISOR"/>
+<manualTask id="844dfd77-f682-4b3a-a907-1466cf8302d0" name="Request For Payment APPROVED by ADMINISTRATION"/>
+<sequence id="a074673b-a131-41e6-95bc-3c6c35a38294" name="SEQ (0)"/>
+<or id="cb2af511-63e1-4a98-b827-871888d3433f" name="OR (11)"/>
+<xor id="ceca23b6-4ba6-4199-ad77-27b9aa8b9d46" name="XOR (5)"/>
+<manualTask id="c204db42-12e5-4bde-9044-e76717456eb1" name="Request For Payment REJECTED by ADMINISTRATION"/>
+<manualTask id="4bea7d65-5baa-48ca-96be-ed9210d2fa0c" name="Request For Payment FINAL_APPROVED by SUPERVISOR"/>
+<xor id="f45b73b0-ff21-49d1-a015-bb7f33d8de19" name="XOR (12)"/>
+<manualTask id="39fa8529-cb81-4fca-b3c8-f2e0b46c3f69" name="Request For Payment SAVED by EMPLOYEE"/>
+<xor id="d5994cf4-11ca-43a8-ac21-5be20c9aaa38" name="XOR (16)"/>
+<manualTask id="b0e6367a-b4b3-455b-be9c-b4ae021188a0" name="Request For Payment REJECTED by EMPLOYEE"/>
+<manualTask id="19a0ea1d-5807-4ad0-a86c-27693ad56001" name="Request For Payment APPROVED by BUDGET OWNER"/>
+<xor id="122380c7-1c30-484d-96a6-805f97271c14" name="XOR (3)"/>
+<manualTask id="5b21f78e-0bc8-4a46-a153-98ebdacebfa6" name="Request Payment"/>
+<manualTask id="df417446-98ca-4e4e-a28c-03617a4fe94f" name="Request For Payment REJECTED by EMPLOYEE"/>
+<manualTask id="4da4ed3c-4e20-47f3-9299-5bd9008de076" name="Request For Payment SUBMITTED by EMPLOYEE"/>
+<manualTask id="c0ecf92c-bdbe-497c-9685-17eb97731098" name="Request For Payment APPROVED by SUPERVISOR"/>
+<automaticTask id="44284a58-0d4d-454f-a64a-1461724ac5cf" name="Tau"/>
+<manualTask id="5a71fe66-d798-4160-b11c-dd989bb4fdc6" name="Payment Handled"/>
+<parentsNode id="5ace0de5-71fd-4793-9600-d264356fe8b2" sourceId="0851ae0c-b957-467b-8a77-7577410204ce" targetId="ceca23b6-4ba6-4199-ad77-27b9aa8b9d46"/>
+<parentsNode id="da01e5e5-5b87-4dbd-8af3-560ef609a6fb" sourceId="0851ae0c-b957-467b-8a77-7577410204ce" targetId="833ff79f-b5cc-4c07-af23-f50a0b1def4b"/>
+<parentsNode id="c11bb360-fba0-4919-a44f-070e5de384a4" sourceId="047b58dc-0fb6-42b4-a840-ee12d068556e" targetId="c0ecf92c-bdbe-497c-9685-17eb97731098"/>
+<parentsNode id="3e814e0b-a4fc-4764-9219-b48e25fc499d" sourceId="047b58dc-0fb6-42b4-a840-ee12d068556e" targetId="39fa8529-cb81-4fca-b3c8-f2e0b46c3f69"/>
+<parentsNode id="a463dc0f-b647-43e1-9d76-ddbd9f5ecfbb" sourceId="0e797d3d-d09d-42d8-8348-eba5c97693bf" targetId="df417446-98ca-4e4e-a28c-03617a4fe94f"/>
+<parentsNode id="d7736e98-e2c0-482f-bb51-203b8d06f6b4" sourceId="0e797d3d-d09d-42d8-8348-eba5c97693bf" targetId="5a71fe66-d798-4160-b11c-dd989bb4fdc6"/>
+<parentsNode id="6f770154-de29-46c8-b433-af1ebf64edc3" sourceId="0c3d11be-8b31-4a59-852d-843d49f44a57" targetId="44284a58-0d4d-454f-a64a-1461724ac5cf"/>
+<parentsNode id="ba51a587-16ea-45e6-a378-a0735da47fd6" sourceId="0c3d11be-8b31-4a59-852d-843d49f44a57" targetId="122380c7-1c30-484d-96a6-805f97271c14"/>
+<parentsNode id="c7717f51-a8ce-48aa-a04c-91e7d63600bb" sourceId="0c3d11be-8b31-4a59-852d-843d49f44a57" targetId="6e6bcc78-4dd8-4204-90d2-d410aa1b2851"/>
+<parentsNode id="6818a29f-4df7-4988-9a38-b75a552b19db" sourceId="a074673b-a131-41e6-95bc-3c6c35a38294" targetId="0c3d11be-8b31-4a59-852d-843d49f44a57"/>
+<parentsNode id="8b7ccdc9-3eb8-44a3-bf34-8425d4c0cb6b" sourceId="a074673b-a131-41e6-95bc-3c6c35a38294" targetId="cb2af511-63e1-4a98-b827-871888d3433f"/>
+<parentsNode id="bf263c68-7ceb-4f57-9929-7c1ead639e19" sourceId="a074673b-a131-41e6-95bc-3c6c35a38294" targetId="d5994cf4-11ca-43a8-ac21-5be20c9aaa38"/>
+<parentsNode id="9a3f7007-2ae0-4b9c-831d-a77ebdc92421" sourceId="a074673b-a131-41e6-95bc-3c6c35a38294" targetId="5b21f78e-0bc8-4a46-a153-98ebdacebfa6"/>
+<parentsNode id="9d23cbeb-287e-412e-aca0-291319cd2d8c" sourceId="a074673b-a131-41e6-95bc-3c6c35a38294" targetId="0e797d3d-d09d-42d8-8348-eba5c97693bf"/>
+<parentsNode id="12256d3f-0f0a-4704-bd73-d79cfe47139c" sourceId="cb2af511-63e1-4a98-b827-871888d3433f" targetId="f45b73b0-ff21-49d1-a015-bb7f33d8de19"/>
+<parentsNode id="92c733c6-499b-4e5f-9b5d-f450530bf045" sourceId="cb2af511-63e1-4a98-b827-871888d3433f" targetId="19a0ea1d-5807-4ad0-a86c-27693ad56001"/>
+<parentsNode id="491b3ffd-1677-481c-a7e4-cf59b5b308fb" sourceId="ceca23b6-4ba6-4199-ad77-27b9aa8b9d46" targetId="b0e6367a-b4b3-455b-be9c-b4ae021188a0"/>
+<parentsNode id="bb4f7301-d04f-45bd-bff4-d70fdd94d480" sourceId="ceca23b6-4ba6-4199-ad77-27b9aa8b9d46" targetId="f0494c62-10b7-4be5-961e-a75a7f099b78"/>
+<parentsNode id="f59ccac2-4637-4dec-8e38-3b03203558d5" sourceId="f45b73b0-ff21-49d1-a015-bb7f33d8de19" targetId="c204db42-12e5-4bde-9044-e76717456eb1"/>
+<parentsNode id="077a9e04-54ff-4a3d-841b-469fc3cc8805" sourceId="f45b73b0-ff21-49d1-a015-bb7f33d8de19" targetId="844dfd77-f682-4b3a-a907-1466cf8302d0"/>
+<parentsNode id="cfd74093-c5f8-4f1d-8297-df5d96fa9809" sourceId="d5994cf4-11ca-43a8-ac21-5be20c9aaa38" targetId="4bea7d65-5baa-48ca-96be-ed9210d2fa0c"/>
+<parentsNode id="749c6c4b-642c-45b3-aaba-ad619d9b16ac" sourceId="d5994cf4-11ca-43a8-ac21-5be20c9aaa38" targetId="047b58dc-0fb6-42b4-a840-ee12d068556e"/>
+<parentsNode id="cb4046e3-a163-4726-b38a-971656a7d637" sourceId="122380c7-1c30-484d-96a6-805f97271c14" targetId="0851ae0c-b957-467b-8a77-7577410204ce"/>
+<parentsNode id="95fa492f-f52d-4305-aee8-71884ca29f34" sourceId="122380c7-1c30-484d-96a6-805f97271c14" targetId="4da4ed3c-4e20-47f3-9299-5bd9008de076"/>
+</processTree>
+</ptml>

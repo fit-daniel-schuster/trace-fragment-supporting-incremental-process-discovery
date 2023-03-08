@@ -1,0 +1,5 @@
+matplotlib==3.6.2
+numpy>=1.21.2
+seaborn==0.12.2
+git+https://github.com/cortado-tool/cortado-core@main#egg=cortado_core
+pm4py==2.4.1
